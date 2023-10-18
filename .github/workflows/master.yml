@@ -15,4 +15,4 @@ jobs:
       with:
           version: '8.6.8'
           projectPath: '${{ github.workspace }}'
-          args: '-noSplash -retry=0 -testSuitePath="Test Suites/S1 Login-SauceDemo" -browserType="Chrome (headless)" -executionProfile="default" -apiKey="159d0cba-d8a7-4481-8fcc-90793ef55195"--config -webui.autoUpdateDrivers=true'
+          args: '-noSplash -retry=0 -testSuitePath="Test Suites/S1 Login-SauceDemo" -browserType="Chrome (headless)" -executionProfile="default" -apiKey="159d0cba-d8a7-4481-8fcc-90793ef55195" --config -webui.autoUpdateDrivers=true'
