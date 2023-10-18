@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Type a message</name>
+   <tag></tag>
+   <elementGuidId>0b5b6495-7eee-410a-9811-7b35f9caad48</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>div._3Uu1_</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>/html/body/div[1]/div/div/div[4]/div/footer/div[1]/div/span[2]/div/div[2]/div[1]/div/div[1]</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//div[(text() = 'Type a message' or . = 'Type a message')]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>6852311c-afb3-4767-aefe-414e53efa995</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tabindex</name>
+      <type>Main</type>
+      <value>-1</value>
+      <webElementGuid>a0b2b4c7-f6ca-4279-ae49-c449f90ba8c9</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>_3Uu1_</value>
+      <webElementGuid>fcb0d653-b888-4124-bcf9-365d7160d698</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Type a message</value>
+      <webElementGuid>a47d3794-ba27-4e63-8ee6-700244b47748</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;main&quot;)/footer[@class=&quot;_3E8Fg&quot;]/div[@class=&quot;_2lSWV _3cjY2 copyable-area&quot;]/div[@class=&quot;_4r9rJ&quot;]/span[2]/div[@class=&quot;_2lryq&quot;]/div[@class=&quot;_1VZX7&quot;]/div[@class=&quot;_3Uu1_&quot;]</value>
+      <webElementGuid>329c0b95-2013-44d4-aaa4-54a68a45a22d</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='main']/footer/div/div/span[2]/div/div[2]/div</value>
+      <webElementGuid>eac10714-983f-446f-a239-caf7b41308b1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Missed voice call at 1:18 PM'])[1]/following::div[17]</value>
+      <webElementGuid>47d75353-5035-47ff-87d2-5ac230129536</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Bang dc bang'])[1]/following::div[28]</value>
+      <webElementGuid>93e4f8fb-0330-40cc-9d85-4422c862c21e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Capture object:'])[1]/preceding::div[18]</value>
+      <webElementGuid>d7ac0c99-02b7-4557-8537-977520e86b1b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//span[2]/div/div[2]/div</value>
+      <webElementGuid>b266f9b2-e0bf-474b-ba83-fd4bff1f17af</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'Type a message' or . = 'Type a message')]</value>
+      <webElementGuid>8bcbe658-44ca-456f-835d-dca625bf389c</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

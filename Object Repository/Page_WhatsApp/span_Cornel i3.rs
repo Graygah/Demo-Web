@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_Cornel i3</name>
+   <tag></tag>
+   <elementGuidId>c3654ada-b661-4bb9-a7eb-ee8fd1e43f15</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='pane-side']/div/div/div/div[8]/div/div/div/div[2]/div/div/span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>41572ea1-da72-4e07-ad44-c1ac24170222</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>dir</name>
+      <type>Main</type>
+      <value>auto</value>
+      <webElementGuid>7cb67c8e-6d50-47e5-ac68-e75fc93bc44b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>title</name>
+      <type>Main</type>
+      <value>Cornel i3</value>
+      <webElementGuid>a28ef9b2-2fdc-48d3-9dbb-c2e61be1348a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>ggj6brxn gfz4du6o r7fjleex g0rxnol2 lhj4utae le5p0ye3 l7jjieqr _11JPr</value>
+      <webElementGuid>7e9dbdb3-cf2d-4161-8cbe-eac8346f3690</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Cornel i3</value>
+      <webElementGuid>346b80fd-07f2-4839-91b6-38c6e14067a2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;pane-side&quot;)/div[1]/div[1]/div[@class=&quot;_3YS_f _2A1R8&quot;]/div[@class=&quot;lhggkp7q ln8gz9je rx9719la&quot;]/div[@class=&quot;g0rxnol2&quot;]/div[1]/div[@class=&quot;_199zF _3j691&quot;]/div[@class=&quot;_8nE1Y&quot;]/div[@class=&quot;y_sn4&quot;]/div[@class=&quot;_21S-L&quot;]/span[@class=&quot;ggj6brxn gfz4du6o r7fjleex g0rxnol2 lhj4utae le5p0ye3 l7jjieqr _11JPr&quot;]</value>
+      <webElementGuid>bcfa9fd6-2cce-4dde-b1fa-7626397f9931</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='pane-side']/div/div/div/div[8]/div/div/div/div[2]/div/div/span</value>
+      <webElementGuid>42d4f11e-727d-4860-8851-f200bccbf8f1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Sticker'])[1]/following::span[5]</value>
+      <webElementGuid>b648fe57-ceff-4bed-981d-39b15e85aeea</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Missed voice call'])[1]/preceding::span[3]</value>
+      <webElementGuid>f197036f-58a3-4672-a084-f962a05743d8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Software lab vm'])[1]/preceding::span[11]</value>
+      <webElementGuid>c930c3be-0f80-4639-95fb-5c31c13c172d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[8]/div/div/div/div[2]/div/div/span</value>
+      <webElementGuid>0770bcb0-e398-43cf-8b63-b8d13d6679eb</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[@title = 'Cornel i3' and (text() = 'Cornel i3' or . = 'Cornel i3')]</value>
+      <webElementGuid>87cf6325-c2e8-43f3-89e6-431992a7ea87</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

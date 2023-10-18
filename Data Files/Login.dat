@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataFileEntity>
+   <description></description>
+   <name>Login</name>
+   <tag></tag>
+   <containsHeaders>true</containsHeaders>
+   <csvSeperator></csvSeperator>
+   <dataFileGUID>c9d33959-54e6-4999-bc03-d811128a4cb3</dataFileGUID>
+   <dataSourceUrl>jdbc:mysql://localhost:3306/web-based</dataSourceUrl>
+   <driver>DBData</driver>
+   <driverClassName></driverClassName>
+   <isInternalPath>false</isInternalPath>
+   <password></password>
+   <query>SELECT * FROM `web-based`.`login` LIMIT 1000;</query>
+   <secureUserAccount>true</secureUserAccount>
+   <sheetName></sheetName>
+   <user>root</user>
+   <usingGlobalDBSetting>false</usingGlobalDBSetting>
+</DataFileEntity>

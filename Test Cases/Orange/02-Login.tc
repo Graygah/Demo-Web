@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>02-Login</name>
+   <tag></tag>
+   <integratedEntity>
+      <productName>com.katalon.plugin.testrail.TestRailIntegration</productName>
+      <properties>
+         <entry>
+            <key>testRail.testcase.id</key>
+            <value>4</value>
+         </entry>
+      </properties>
+      <type>TESTCASE</type>
+   </integratedEntity>
+   <comment></comment>
+   <testCaseGuid>a2bf808a-224b-4f93-a2c2-c7838faeb275</testCaseGuid>
+</TestCaseEntity>

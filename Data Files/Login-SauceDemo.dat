@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataFileEntity>
+   <description></description>
+   <name>Login-SauceDemo</name>
+   <tag></tag>
+   <connectionProperties/>
+   <containsHeaders>true</containsHeaders>
+   <csvSeperator></csvSeperator>
+   <dataFileGUID>84edcea8-7095-436d-81c0-0ab80eacb5ff</dataFileGUID>
+   <dataSourceUrl>jdbc:mysql://localhost:3306/test</dataSourceUrl>
+   <driver>DBData</driver>
+   <driverClassName></driverClassName>
+   <isInternalPath>false</isInternalPath>
+   <password></password>
+   <query>SELECT * FROM `test`.`00-login-saucedemo` LIMIT 1000;</query>
+   <secureUserAccount>true</secureUserAccount>
+   <sheetName></sheetName>
+   <user>root</user>
+   <usingGlobalDBSetting>false</usingGlobalDBSetting>
+</DataFileEntity>

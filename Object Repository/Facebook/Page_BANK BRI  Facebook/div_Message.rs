@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Message</name>
+   <tag></tag>
+   <elementGuidId>c2278efc-0be6-4e45-9035-b8d4d6183bab</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>div.x1n2onr6.x1ja2u2z.x78zum5.x2lah0s.xl56j7k.x6s0dn4.xozqiw3.x1q0g3np.xi112ho.x17zwfj4.x585lrc.x1403ito.x972fbf.xcfux6l.x1qhh985.xm0m39n.x9f619.xn6708d.x1ye3gou.xtvsq51.x1r1pt67</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='mount_0_0_03']/div/div/div/div[3]/div/div/div/div/div/div/div/div/div[2]/div/div/div/div[4]/div/div/div/div/div/div</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//div[(text() = 'Message' or . = 'Message')]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>fc7eb097-e385-4883-8723-9e21893ff2e8</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>x1n2onr6 x1ja2u2z x78zum5 x2lah0s xl56j7k x6s0dn4 xozqiw3 x1q0g3np xi112ho x17zwfj4 x585lrc x1403ito x972fbf xcfux6l x1qhh985 xm0m39n x9f619 xn6708d x1ye3gou xtvsq51 x1r1pt67</value>
+      <webElementGuid>0e503d67-cc53-48db-b330-fb33eab31ac9</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Message</value>
+      <webElementGuid>e71473e7-7dcf-4f11-94a4-a5a88a118439</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;mount_0_0_03&quot;)/div[1]/div[1]/div[@class=&quot;x9f619 x1n2onr6 x1ja2u2z&quot;]/div[@class=&quot;x9f619 x1n2onr6 x1ja2u2z&quot;]/div[@class=&quot;x78zum5 xdt5ytf x1n2onr6 x1ja2u2z&quot;]/div[@class=&quot;x78zum5 xdt5ytf x1n2onr6&quot;]/div[@class=&quot;x78zum5 xdt5ytf x1n2onr6 xat3117 xxzkxad&quot;]/div[@class=&quot;x78zum5 xdt5ytf x10cihs4 x1t2pt76 x1n2onr6 x1ja2u2z&quot;]/div[@class=&quot;x78zum5 xdt5ytf x1t2pt76&quot;]/div[@class=&quot;x78zum5 xdt5ytf x1iyjqo2 x1t2pt76 xeuugli&quot;]/div[@class=&quot;x78zum5 xdt5ytf x1t2pt76 x1n2onr6&quot;]/div[1]/div[@class=&quot;x9f619 x1n2onr6 x1ja2u2z x78zum5 x2lah0s xl56j7k x1qjc9v5 xozqiw3 x1q0g3np x1l90r2v x1ve1bff&quot;]/div[@class=&quot;x9f619 x1n2onr6 x1ja2u2z x78zum5 xdt5ytf xeuugli x1r8uery x1iyjqo2 xs83m0k x1swvt13 x1pi30zi xqdwrps x16i7wwg x1y5dvz6&quot;]/div[1]/div[@class=&quot;x6s0dn4 x78zum5      xvrxa7q x9w375v xxfedj9 x1roke11 x1es02x0&quot;]/div[@class=&quot;x1ifrov1 x1i1uccp x1stjdt1 x1yaem6q x4ckvhe x2k3zez xjbssrd x1ltux0g xit7rg8 xc9uqle x17quhge&quot;]/div[1]/div[@class=&quot;x78zum5 x1a02dak x139jcc6 xcud41i x9otpla x1ke80iy&quot;]/div[@class=&quot;xsgj6o6 xw3qccf x1xmf6yo x1w6jkce xusnbm3&quot;]/div[@class=&quot;xh8yej3&quot;]/div[@class=&quot;x1i10hfl xjbqb8w x6umtig x1b1mbwd xaqea5y xav7gou x1ypdohk xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r xexx8yu x4uap5 x18d9i69 xkhd6sd x16tdsg8 x1hl2dhg xggy1nq x1o1ewxj x3x9cwd x1e5q0jg x13rtm0m x87ps6o x1lku1pv x1a2a7pz x9f619 x3nfvp2 xdt5ytf xl56j7k x1n2onr6 xh8yej3&quot;]/div[@class=&quot;x1n2onr6 x1ja2u2z x78zum5 x2lah0s xl56j7k x6s0dn4 xozqiw3 x1q0g3np xi112ho x17zwfj4 x585lrc x1403ito x972fbf xcfux6l x1qhh985 xm0m39n x9f619 xn6708d x1ye3gou xtvsq51 x1r1pt67&quot;]</value>
+      <webElementGuid>f1b59781-f7fe-4d88-ad2d-bfe5c2c1dd09</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='mount_0_0_03']/div/div/div/div[3]/div/div/div/div/div/div/div/div/div[2]/div/div/div/div[4]/div/div/div/div/div/div</value>
+      <webElementGuid>a509b31c-c601-4770-a8ab-3f9e5a49c678</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Like'])[1]/preceding::div[6]</value>
+      <webElementGuid>e68cb208-ac6c-4bfb-a17b-8bd177b8b2e4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div/div/div/div[4]/div/div/div/div/div/div</value>
+      <webElementGuid>bb6c2dbf-e43c-498a-b35f-0cf0240f7a98</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'Message' or . = 'Message')]</value>
+      <webElementGuid>2def074f-ac93-4fc6-8964-91abc5a2a139</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

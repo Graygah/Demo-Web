@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>00-Logout</name>
+   <tag></tag>
+   <integratedEntity>
+      <productName>com.katalon.plugin.testrail.TestRailIntegration</productName>
+      <properties>
+         <entry>
+            <key>testRail.testcase.id</key>
+            <value>5</value>
+         </entry>
+      </properties>
+      <type>TESTCASE</type>
+   </integratedEntity>
+   <comment></comment>
+   <testCaseGuid>63899178-1a34-441f-9ac8-cefa9b9af335</testCaseGuid>
+</TestCaseEntity>

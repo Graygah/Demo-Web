@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalVariableEntities>
+   <description></description>
+   <name>default</name>
+   <tag></tag>
+   <defaultProfile>true</defaultProfile>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'</initValue>
+      <name>url</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://www.saucedemo.com/'</initValue>
+      <name>sauce</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'admin'</initValue>
+      <name>userhrm</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'admin123'</initValue>
+      <name>passhrm</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'standard_user'</initValue>
+      <name>usersauce</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'secret_sauce'</initValue>
+      <name>passsauce</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'/Foto/foto.jpg'</initValue>
+      <name>pathfoto</name>
+   </GlobalVariableEntity>
+</GlobalVariableEntities>

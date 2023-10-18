@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Button_PersonalDetails</name>
+   <tag></tag>
+   <elementGuidId>c8fd9d14-5d9a-49eb-8c94-cb0cf7c6b599</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>li.selected > a</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//ul[@id='sidenav']/li/a</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>d73ffe9c-0334-41fb-b650-e63cd4536f4d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>href</name>
+      <type>Main</type>
+      <value>/index.php/pim/viewPersonalDetails/empNumber/7</value>
+      <webElementGuid>e6620005-00b5-45b3-936c-04187a92752f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Personal Details</value>
+      <webElementGuid>c5e48007-819d-4ffa-a2b0-59e4f1b3389f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;sidenav&quot;)/li[@class=&quot;selected&quot;]/a[1]</value>
+      <webElementGuid>56fa9eb5-6b4a-4e13-ac20-0b74bdfa840e</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//ul[@id='sidenav']/li/a</value>
+      <webElementGuid>f355fe28-0948-4d70-8e9c-1967eff20170</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:link</name>
+      <type>Main</type>
+      <value>//a[contains(text(),'Personal Details')]</value>
+      <webElementGuid>c1d08b82-b762-4cf9-ba29-d30ceb282d48</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='PaulAbc Pqr Collingsxyz'])[1]/following::a[2]</value>
+      <webElementGuid>6d197356-9229-4fed-8cae-66980f55460e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Buzz'])[1]/following::a[2]</value>
+      <webElementGuid>419556d4-6e05-41a3-9cde-6dabab315d25</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Contact Details'])[1]/preceding::a[1]</value>
+      <webElementGuid>16c2ef79-3cd9-4ad0-8f0e-4ccc722a15cd</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Emergency Contacts'])[1]/preceding::a[2]</value>
+      <webElementGuid>4904da50-7d6a-49f2-848d-0344f3375372</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Personal Details']/parent::*</value>
+      <webElementGuid>33ff8675-3fb4-4c60-8f4c-1194ed84d633</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:href</name>
+      <type>Main</type>
+      <value>//a[contains(@href, '/index.php/pim/viewPersonalDetails/empNumber/7')]</value>
+      <webElementGuid>5a51716c-c545-4f11-be0a-ebf3faf12b9d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[3]/div/div/ul/li/a</value>
+      <webElementGuid>26897ba1-5547-4aa6-927d-f4c1bc3e6e17</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//a[@href = '/index.php/pim/viewPersonalDetails/empNumber/7' and (text() = 'Personal Details' or . = 'Personal Details')]</value>
+      <webElementGuid>b5b5fa94-fdbb-4381-b183-57dcf716794f</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

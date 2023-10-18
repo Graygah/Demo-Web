@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Button_MyInfo</name>
+   <tag></tag>
+   <elementGuidId>4ef1cc2b-d43c-48f4-87a6-b3ef3a13a071</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#menu_pim_viewMyDetails > b</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//a[@id='menu_pim_viewMyDetails']/b</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>b</value>
+      <webElementGuid>6280ec66-84e7-4e08-9966-a07450cb5019</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>My Info</value>
+      <webElementGuid>5af55dda-bcff-43eb-ad9d-db5239e46576</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;menu_pim_viewMyDetails&quot;)/b[1]</value>
+      <webElementGuid>14fc26ad-32b2-4aae-bcb3-0e600cff511a</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//a[@id='menu_pim_viewMyDetails']/b</value>
+      <webElementGuid>3910be37-b6a9-43de-9ab1-86cae2f3f183</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Vacancies'])[1]/following::b[1]</value>
+      <webElementGuid>91e4b342-a09f-421e-a8eb-6c04c0db79f9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Candidates'])[1]/following::b[1]</value>
+      <webElementGuid>e1e2dc52-c866-4617-8949-b547a67e094d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Performance'])[1]/preceding::b[1]</value>
+      <webElementGuid>eef3f133-9688-43df-af87-c5f9da1df98f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='KPIs'])[1]/preceding::b[2]</value>
+      <webElementGuid>87e0d25b-79ba-437d-8290-db2fd7f1afcf</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='My Info']/parent::*</value>
+      <webElementGuid>a57b42fe-748e-411b-b606-ad11517a8e52</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//li[6]/a/b</value>
+      <webElementGuid>9eedb5a4-ef43-4b68-9081-90e7c217c6f8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//b[(text() = 'My Info' or . = 'My Info')]</value>
+      <webElementGuid>c7e2f6d6-b351-486e-91dc-6557b4cb7ccc</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

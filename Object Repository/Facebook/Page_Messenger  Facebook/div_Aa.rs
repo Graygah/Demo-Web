@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Aa</name>
+   <tag></tag>
+   <elementGuidId>f57c9ea5-f2a7-45d5-bf96-541c4d351f4c</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>div.x78zum5.x1a02dak.x13a6bvl</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>/html/body/div[1]/div/div[1]/div/div[3]/div/div/div/div[1]/div[1]/div[2]/div/div/div/div/div/div[1]/div[2]/div/div/div[2]/div/div/div[4]/div[2]/div/div/div[1]/p</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//div[(text() = 'Aa' or . = 'Aa')]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>8185667a-8275-4221-8109-45fdbefdcb9e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>x78zum5 x1a02dak x13a6bvl</value>
+      <webElementGuid>996e39e0-6927-49a0-bc48-aede245637f9</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Aa</value>
+      <webElementGuid>e74e8b43-fa19-4def-ae67-752ef65985a6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;mount_0_0_03&quot;)/div[1]/div[1]/div[@class=&quot;x9f619 x1n2onr6 x1ja2u2z&quot;]/div[@class=&quot;x9f619 x1n2onr6 x1ja2u2z&quot;]/div[@class=&quot;x78zum5 xdt5ytf x1n2onr6 x1ja2u2z&quot;]/div[@class=&quot;x78zum5 xdt5ytf x1n2onr6&quot;]/div[@class=&quot;x78zum5 xdt5ytf x1n2onr6 xat3117 xxzkxad&quot;]/div[@class=&quot;x78zum5 xdt5ytf x10cihs4 x1t2pt76 x1n2onr6 x1ja2u2z&quot;]/div[@class=&quot;x9f619 x2lah0s x1nhvcw1 x1qjc9v5 xozqiw3 x1q0g3np x78zum5 x1iyjqo2 x1t2pt76 x1n2onr6 x1ja2u2z&quot;]/div[@class=&quot;x9f619 x1n2onr6 x1ja2u2z xdt5ytf x193iq5w xeuugli x1r8uery x1iyjqo2 xs83m0k x78zum5 x1t2pt76&quot;]/div[@class=&quot;x78zum5 xdt5ytf x1iyjqo2 x1t2pt76 xeuugli x1n2onr6 x1ja2u2z&quot;]/div[@class=&quot;x78zum5 xdt5ytf x1iyjqo2 xs83m0k&quot;]/div[@class=&quot;x1ja2u2z x9f619 x78zum5 xdt5ytf x193iq5w x1l7klhg x1iyjqo2 xs83m0k x2lwn1j xcrg951 x6prxxf x85a59c x6ikm8r x10wlt62 x1n2onr6&quot;]/div[@class=&quot;x9f619 x1n2onr6 x1ja2u2z x78zum5 xdt5ytf x1iyjqo2 x2lwn1j&quot;]/div[@class=&quot;x9f619 x1n2onr6 x1ja2u2z x78zum5 x1r8uery x1iyjqo2 xs83m0k xeuugli x1qughib x1qjc9v5 xozqiw3 x1q0g3np xexx8yu x85a59c&quot;]/div[@class=&quot;x9f619 x1ja2u2z x193iq5w xeuugli x1r8uery x1iyjqo2 xs83m0k x78zum5 xdt5ytf x6ikm8r x10wlt62 x1n2onr6&quot;]/div[@class=&quot;x1uvtmcs x4k7w5x x1h91t0o x1beo9mf xaigb6o x12ejxvf x3igimt xarpa2k xedcshv x1lytzrv x1t2pt76 x7ja8zs x1n2onr6 x1qrby5j x1jfb8zj&quot;]/div[@class=&quot;x5yr21d x1uvtmcs x78zum5 x1iyjqo2&quot;]/div[@class=&quot;x78zum5 xdt5ytf x1iyjqo2 x193iq5w x2lwn1j x1n2onr6 x1ja2u2z&quot;]/div[2]/div[@class=&quot;xuk3077 x78zum5 x6prxxf xz9dl7a xsag5q8&quot;]/div[@class=&quot;x1iyjqo2 xw2csxc x1n2onr6&quot;]/div[@class=&quot;x78zum5 x1iyjqo2 x6q2ic0&quot;]/div[@class=&quot;xmjcpbm x107yiy2 xv8uw2v x1tfwpuw x2g32xy x9f619 x1iyjqo2 xeuugli&quot;]/div[@class=&quot;x78zum5 x1a02dak x13a6bvl&quot;]</value>
+      <webElementGuid>7b18a4ba-15b5-45ad-afae-4532aada83c1</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='mount_0_0_03']/div/div/div/div[3]/div/div/div/div/div/div[2]/div/div/div/div/div/div/div[2]/div/div/div[2]/div/div/div[4]/div[2]/div</value>
+      <webElementGuid>fd7e8dd8-8ae3-492f-b421-3a257c3227e3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Write to BANK BRI'])[1]/following::div[2]</value>
+      <webElementGuid>4ce1cf55-8ef7-4dee-af0f-e461b2e004fb</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Learn about business chats and your privacy.'])[1]/following::div[18]</value>
+      <webElementGuid>374889a4-db7c-4208-aeff-27334fe695c3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='BANK BRI'])[3]/preceding::div[21]</value>
+      <webElementGuid>6516771c-a47a-4004-aa81-f8cb5a174e61</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[4]/div[2]/div</value>
+      <webElementGuid>426dad81-7132-4ee6-9d0e-e864aa8e9ce2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'Aa' or . = 'Aa')]</value>
+      <webElementGuid>f63495a3-1822-4eb1-9171-497884b501c6</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
