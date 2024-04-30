@@ -3,7 +3,9 @@ import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
-import java.rmi.server.LoaderHandler as LoaderHandler
+
+import java.rmi.server.LoaderHandler
+
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
@@ -15,16 +17,15 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
-import com.sun.org.apache.xml.internal.resolver.helpers.FileURL as FileURL
-import internal.GlobalVariable as GlobalVariable
-import org.apache.ivy.plugins.resolver.util.FileURLLister as FileURLLister
-import org.apache.pdfbox.Loader as Loader
-import org.apache.pdfbox.pdmodel.PDDocument as PDDocument
-import org.apache.pdfbox.text.PDFTextStripper as PDFTextStripper
+import internal.GlobalVariable
+
+import org.apache.pdfbox.Loader
+import org.apache.pdfbox.pdmodel.PDDocument
+import org.apache.pdfbox.text.PDFTextStripper
 import org.openqa.selenium.Keys as Keys
 
 //String URL = WebUI.getUrl()
-File pdf = WebUI.navigateToUrl('https://staffnew.uny.ac.id/upload/197712152010122002/pengabdian/jurnal-ilmiah-hima-ian.pdf')
+File pdf = new File("D://Katalon Project//Demo Web//PDF//manual-qa-ebook-jan-2023.pdf");
 
 PDDocument document = pdf
 

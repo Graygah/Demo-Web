@@ -17,31 +17,35 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-//WebUI.openBrowser('')
-//
-//WebUI.navigateToUrl(GlobalVariable.sauce)
-//
-//WebUI.maximizeWindow()
-//
-//WebUI.delay(2)
+WebUI.openBrowser('')
+
+WebUI.navigateToUrl('https://www.saucedemo.com/')
+
+long startTime = System.nanoTime()
+
+println(startTime)
+
+// code to perform some action, and appropriate wait conditions
+long endTime = System.nanoTime()
+
+println(endTime)
+
+long responseTime = (endTime - startTime) / 1000000
+
+println(responseTime)
+
+WebUI.maximizeWindow()
 
 //TestData input = findTestData('Data Files/Login-SauceDemo')
-// for (int baris=1; baris<= input.getRowNumbers(); baris++)
-// {
-WebUI.setText(findTestObject('Object Repository/Sauce/Login-SauceDemo/Input_Username'), GlobalVariable.usersauce)
-
-WebUI.delay(1)
-
-WebUI.setText(findTestObject('Object Repository/Sauce/Login-SauceDemo/Input_Password'), GlobalVariable.passsauce)
-
-WebUI.delay(1)
-
-WebUI.takeScreenshot()
-
-WebUI.click(findTestObject('Object Repository/Sauce/Login-SauceDemo/Button_Login'))
-
-WebUI.waitForElementPresent(findTestObject('Object Repository/Sauce/Login-SauceDemo/Div_Products'), 0)
-
-WebUI.delay(3)
-
-WebUI.takeScreenshot()
+//for (int baris = 1; baris <= input.getRowNumbers(); baris++) {
+//WebUI.setText(findTestObject('Object Repository/Sauce/Login-SauceDemo/Input_Username'), GlobalVariable.usersauce)
+//
+//WebUI.setText(findTestObject('Object Repository/Sauce/Login-SauceDemo/Input_Password'), GlobalVariable.passsauce)
+//
+//WebUI.takeScreenshot()
+//
+//WebUI.click(findTestObject('Object Repository/Sauce/Login-SauceDemo/Button_Login'))
+//
+//WebUI.waitForElementPresent(findTestObject('Object Repository/Sauce/Login-SauceDemo/Div_Products'), 0)
+//
+//WebUI.takeScreenshot()

@@ -17,14 +17,4 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.click(findTestObject('Object Repository/Sauce/Login-SauceDemo/button_Open Menu'))
-
-WebUI.delay(1)
-
-WebUI.takeScreenshot()
-
-WebUI.click(findTestObject('Object Repository/Sauce/Login-SauceDemo/Button_Logout'))
-
-WebUI.delay(3)
-
-WebUI.takeScreenshot()
+CucumberKW.runFeatureFile('Include/features/Orange Login.feature')

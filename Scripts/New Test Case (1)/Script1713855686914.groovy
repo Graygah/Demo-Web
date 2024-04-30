@@ -17,14 +17,19 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.click(findTestObject('Object Repository/Sauce/Login-SauceDemo/button_Open Menu'))
+Mobile.startApplication('C:\\Users\\grayg\\Desktop\\TAPPS-5.apk', true)
 
-WebUI.delay(1)
+Mobile.tap(findTestObject('Object Repository/Coba mobile tokio/android.widget.EditText'), 0)
 
-WebUI.takeScreenshot()
+Mobile.setText(findTestObject('Object Repository/Coba mobile tokio/android.widget.EditText'), '23423423', 0)
 
-WebUI.click(findTestObject('Object Repository/Sauce/Login-SauceDemo/Button_Logout'))
+Mobile.tap(findTestObject('Object Repository/Coba mobile tokio/android.widget.EditText (1)'), 0)
 
-WebUI.delay(3)
+Mobile.setText(findTestObject('Object Repository/Coba mobile tokio/android.widget.EditText (1)'), '123234234', 0)
 
-WebUI.takeScreenshot()
+Mobile.hideKeyboard()
+
+Mobile.tap(findTestObject('Object Repository/Coba mobile tokio/android.widget.Button - Login'), 0)
+
+Mobile.closeApplication()
+
