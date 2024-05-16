@@ -29,7 +29,7 @@ WebUI.setText(findTestObject('Object Repository/Orangen/Login/input_Username_use
 
 WebUI.delay(2)
 
-WebUI.setText(findTestObject('Object Repository/Orangen/Login/input_Password_password'), GlobalVariable.passhrm)
+WebUI.setText(findTestObject('Object Repository/Orangen/Login/input_Password_password') , GlobalVariable.passhrm)
 
 WebUI.delay(2)
 

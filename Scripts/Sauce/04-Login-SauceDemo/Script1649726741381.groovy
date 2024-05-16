@@ -38,14 +38,14 @@ WebUI.maximizeWindow()
 
 //TestData input = findTestData('Data Files/Login-SauceDemo')
 //for (int baris = 1; baris <= input.getRowNumbers(); baris++) {
-//WebUI.setText(findTestObject('Object Repository/Sauce/Login-SauceDemo/Input_Username'), GlobalVariable.usersauce)
-//
-//WebUI.setText(findTestObject('Object Repository/Sauce/Login-SauceDemo/Input_Password'), GlobalVariable.passsauce)
-//
-//WebUI.takeScreenshot()
-//
-//WebUI.click(findTestObject('Object Repository/Sauce/Login-SauceDemo/Button_Login'))
-//
-//WebUI.waitForElementPresent(findTestObject('Object Repository/Sauce/Login-SauceDemo/Div_Products'), 0)
+WebUI.setText(findTestObject('Object Repository/Sauce/Login-SauceDemo/Input_Username'), GlobalVariable.usersauce)
+
+WebUI.setText(findTestObject('Object Repository/Sauce/Login-SauceDemo/Input_Password'), GlobalVariable.passsauce)
 //
 //WebUI.takeScreenshot()
+//
+WebUI.click(findTestObject('Object Repository/Sauce/Login-SauceDemo/Button_Login'))
+//
+WebUI.waitForElementPresent(findTestObject('Object Repository/Sauce/Login-SauceDemo/Div_Products'), 0)
+
+WebUI.takeScreenshot()
