@@ -59,13 +59,15 @@ for (int baris = 1; baris <= 1; baris++) {
         }
     }
     
-    for (int bar = 1; bar <= input.getRowNumbers(); bar++) {
+    TestData input1 = findTestData('Data Files/Checkout')
+
+    for (int bar = 1; bar <= input1.getRowNumbers(); bar++) {
         isbreak = false
 
-        Exp = input.getValue('expected result', bar)
+        Exp = input1.getValue('expected result', bar)
 
-        for (int row = 1; row <= input.getRowNumbers(); row++) {
-            Res = input.getValue('actual result', row)
+        for (int row = 1; row <= input1.getRowNumbers(); row++) {
+            Res = input1.getValue('actual result', row)
 
             if (Exp == Res) {
                 for (int brs = bar; brs <= bar; brs++) {
@@ -88,6 +90,6 @@ for (int baris = 1; baris <= 1; baris++) {
                     }
                 }
             }
-        } //
-    } //        TestObject object = new TestObject().addProperty('xpath', ConditionType.EQUALS, "/html/body/div/div/div/div[2]/div/div[1]/div[$bar+2]/div[2]/div[2]/div")
+        }
+    }
 }
