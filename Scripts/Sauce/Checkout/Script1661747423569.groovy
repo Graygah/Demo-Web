@@ -25,141 +25,145 @@ import com.kms.katalon.core.testobject.ConditionType as ConditionType
 TestData input = findTestData('Data Files/Checkout')
 
 for (int baris = 1; baris <= 1; baris++) {
-    WebUI.delay(1)
+	WebUI.delay(1)
 
-    for (int barang = 1; barang <= input.getRowNumbers(); barang++) {
-        TestObject button = new TestObject().addProperty('xpath', ConditionType.EQUALS, "/html/body/div/div/div/div[2]/div/div/div/div[$barang]/div[2]/div[2]/button")
+	for (int barang = 1; barang <= input.getRowNumbers(); barang++) {
+		TestObject button = new TestObject().addProperty('xpath', ConditionType.EQUALS, "/html/body/div/div/div/div[2]/div/div/div/div[$barang]/div[2]/div[2]/button")
 
-        WebUI.click(button)
-    }
-    
-    WebUI.delay(1)
+		WebUI.click(button)
+	}
 
-    WebUI.click(findTestObject('Object Repository/Sauce/Checkout/a_1'))
+	WebUI.delay(1)
 
-    WebUI.delay(1)
+	WebUI.click(findTestObject('Object Repository/Sauce/Checkout/a_1'))
+
+	WebUI.delay(1)
+
+	String Data = './Excel/Sauce-checkout.xlsx'
+
+	Workbook excel = ExcelKeywords.getWorkbook(Data)
+
+	Sheet sheet1 = excel.getSheet('Sheet1')
+
+	for (int bar = 1; bar <= input.getRowNumbers(); bar++) {
+		TestObject object = new TestObject().addProperty('xpath', ConditionType.EQUALS, "/html/body/div/div/div/div[2]/div/div[1]/div[$bar+2]/div[2]/div[2]/div")
+
+		String price = WebUI.getText(object)
+
+		println(price)
+
+		for (int kol = 5; kol <= 5; kol++) {
+			ExcelKeywords.setValueToCellByIndex(sheet1, bar, kol, price)
+
+			ExcelKeywords.saveWorkbook(Data, excel)
+		}
 	
-    String Data = './Excel/Sauce-checkout.xlsx'
+		for (int kol = 6; kol <= 6; kol++) {
+			
+				if (price == input.getValue('expected result', bar)) {
+					ExcelKeywords.setValueToCellByIndex(sheet1, bar, kol, 'pass')
 
-    Workbook excel = ExcelKeywords.getWorkbook(Data)
+					ExcelKeywords.saveWorkbook(Data, excel)
+					
+					
+				} else {
+					ExcelKeywords.setValueToCellByIndex(sheet1, bar, kol, 'fail')
 
-    Sheet sheet1 = excel.getSheet('Sheet1')
+					ExcelKeywords.saveWorkbook(Data, excel)
+					
+				
+				}
+		}
+	}
 
-    for (int bar = 1; bar <= input.getRowNumbers(); bar++) {
-        TestObject object = new TestObject().addProperty('xpath', ConditionType.EQUALS, "/html/body/div/div/div/div[2]/div/div[1]/div[$bar+2]/div[2]/div[2]/div")
+	WebUI.click(findTestObject('Object Repository/Sauce/Checkout/button_Checkout'))
 
-        String price = WebUI.getText(object)
+	WebUI.delay(1)
 
-        println(price)
+	WebUI.setText(findTestObject('Object Repository/Sauce/Checkout/input_Checkout Your Information_lastName'), input.getValue(
+			'lastname', baris))
 
-        for (int kol = 5; kol <= 5; kol++) {
-            ExcelKeywords.setValueToCellByIndex(sheet1, bar, kol, price)
+	WebUI.delay(1)
 
-            ExcelKeywords.saveWorkbook(Data, excel)
-        }
-        
-        for (int kol = 6; kol <= 6; kol++) {
-            if (price == input.getValue('expected result', bar)) {
-                ExcelKeywords.setValueToCellByIndex(sheet1, bar, kol, 'pass')
+	WebUI.setText(findTestObject('Object Repository/Sauce/Checkout/input_Checkout Your Information_postalCode'), input.getValue(
+			'postalcode', baris))
 
-                ExcelKeywords.saveWorkbook(Data, excel)
-            } else {
-                ExcelKeywords.setValueToCellByIndex(sheet1, bar, kol, 'fail')
+	WebUI.delay(1)
 
-                ExcelKeywords.saveWorkbook(Data, excel)
-            }
-        }
-    }
-    
-    WebUI.click(findTestObject('Object Repository/Sauce/Checkout/button_Checkout'))
+	WebUI.click(findTestObject('Object Repository/Sauce/Checkout/button_continue'))
 
-    WebUI.delay(1)
+	WebUI.verifyTextPresent('Error: First Name is required', false, FailureHandling.OPTIONAL)
 
-    WebUI.setText(findTestObject('Object Repository/Sauce/Checkout/input_Checkout Your Information_lastName'), input.getValue(
-            'lastname', baris))
+	WebUI.takeScreenshot()
 
-    WebUI.delay(1)
+	WebUI.refresh()
 
-    WebUI.setText(findTestObject('Object Repository/Sauce/Checkout/input_Checkout Your Information_postalCode'), input.getValue(
-            'postalcode', baris))
+	WebUI.setText(findTestObject('Object Repository/Sauce/Checkout/input_Checkout Your Information_firstName'), input.getValue(
+			'firstname', baris))
 
-    WebUI.delay(1)
+	WebUI.delay(1)
 
-    WebUI.click(findTestObject('Object Repository/Sauce/Checkout/button_continue'))
+	WebUI.setText(findTestObject('Object Repository/Sauce/Checkout/input_Checkout Your Information_postalCode'), input.getValue(
+			'postalcode', baris))
 
-    WebUI.verifyTextPresent('Error: First Name is required', false, FailureHandling.OPTIONAL)
-	
-    WebUI.takeScreenshot()
+	WebUI.delay(1)
 
-    WebUI.refresh()
+	WebUI.click(findTestObject('Object Repository/Sauce/Checkout/button_continue'))
 
-    WebUI.setText(findTestObject('Object Repository/Sauce/Checkout/input_Checkout Your Information_firstName'), input.getValue(
-            'firstname', baris))
+	WebUI.verifyTextPresent('Error: Last Name is required', false, FailureHandling.OPTIONAL)
 
-    WebUI.delay(1)
+	WebUI.takeScreenshot()
 
-    WebUI.setText(findTestObject('Object Repository/Sauce/Checkout/input_Checkout Your Information_postalCode'), input.getValue(
-            'postalcode', baris))
+	WebUI.refresh()
 
-    WebUI.delay(1)
+	WebUI.setText(findTestObject('Object Repository/Sauce/Checkout/input_Checkout Your Information_firstName'), input.getValue(
+			'firstname', baris))
 
-    WebUI.click(findTestObject('Object Repository/Sauce/Checkout/button_continue'))
+	WebUI.delay(1)
 
-    WebUI.verifyTextPresent('Error: Last Name is required', false, FailureHandling.OPTIONAL)
+	WebUI.setText(findTestObject('Object Repository/Sauce/Checkout/input_Checkout Your Information_lastName'), input.getValue(
+			'lastname', baris))
 
-    WebUI.takeScreenshot()
+	WebUI.delay(1)
 
-    WebUI.refresh()
+	WebUI.click(findTestObject('Object Repository/Sauce/Checkout/button_continue'))
 
-    WebUI.setText(findTestObject('Object Repository/Sauce/Checkout/input_Checkout Your Information_firstName'), input.getValue(
-            'firstname', baris))
+	WebUI.verifyTextPresent('Error: Postal Code is required', false, FailureHandling.OPTIONAL)
 
-    WebUI.delay(1)
+	WebUI.takeScreenshot()
 
-    WebUI.setText(findTestObject('Object Repository/Sauce/Checkout/input_Checkout Your Information_lastName'), input.getValue(
-            'lastname', baris))
+	WebUI.refresh()
 
-    WebUI.delay(1)
+	WebUI.setText(findTestObject('Object Repository/Sauce/Checkout/input_Checkout Your Information_firstName'), input.getValue(
+			'firstname', baris))
 
-    WebUI.click(findTestObject('Object Repository/Sauce/Checkout/button_continue'))
+	WebUI.delay(1)
 
-    WebUI.verifyTextPresent('Error: Postal Code is required', false, FailureHandling.OPTIONAL)
+	WebUI.setText(findTestObject('Object Repository/Sauce/Checkout/input_Checkout Your Information_lastName'), input.getValue(
+			'lastname', baris))
 
-    WebUI.takeScreenshot()
+	WebUI.delay(1)
 
-    WebUI.refresh()
+	WebUI.setText(findTestObject('Object Repository/Sauce/Checkout/input_Checkout Your Information_postalCode'), input.getValue(
+			'postalcode', baris))
 
-    WebUI.setText(findTestObject('Object Repository/Sauce/Checkout/input_Checkout Your Information_firstName'), input.getValue(
-            'firstname', baris))
+	WebUI.takeScreenshot()
 
-    WebUI.delay(1)
+	WebUI.delay(1)
 
-    WebUI.setText(findTestObject('Object Repository/Sauce/Checkout/input_Checkout Your Information_lastName'), input.getValue(
-            'lastname', baris))
+	WebUI.click(findTestObject('Object Repository/Sauce/Checkout/button_continue'))
 
-    WebUI.delay(1)
+	WebUI.delay(1)
 
-    WebUI.setText(findTestObject('Object Repository/Sauce/Checkout/input_Checkout Your Information_postalCode'), input.getValue(
-            'postalcode', baris))
+	WebUI.click(findTestObject('Object Repository/Sauce/Checkout/button_Finish'))
 
-    WebUI.takeScreenshot()
+	WebUI.delay(1)
 
-    WebUI.delay(1)
+	WebUI.takeScreenshot()
 
-    WebUI.click(findTestObject('Object Repository/Sauce/Checkout/button_continue'))
+	WebUI.verifyTextPresent(input.getValue('message', baris), false, FailureHandling.OPTIONAL)
 
-    WebUI.delay(1)
+	WebUI.delay(1)
 
-    WebUI.click(findTestObject('Object Repository/Sauce/Checkout/button_Finish'))
-
-    WebUI.delay(1)
-
-    WebUI.takeScreenshot()
-
-    WebUI.verifyTextPresent(input.getValue('message', baris), false, FailureHandling.OPTIONAL)
-
-    WebUI.delay(1)
-
-    WebUI.click(findTestObject('Object Repository/Sauce/Checkout/button_Back Home'))
-	
+	WebUI.click(findTestObject('Object Repository/Sauce/Checkout/button_Back Home'))
 }

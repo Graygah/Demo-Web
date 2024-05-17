@@ -34,7 +34,7 @@ long responseTime = (endTime - startTime) / 1000000
 
 println(responseTime)
 
-WebUI.maximizeWindow()
+//WebUI.maximizeWindow()
 
 //TestData input = findTestData('Data Files/Login-SauceDemo')
 //for (int baris = 1; baris <= input.getRowNumbers(); baris++) {

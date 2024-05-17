@@ -17,82 +17,77 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.testobject.ConditionType as ConditionType
+import org.apache.poi.ss.usermodel.Sheet as Sheet
+import org.apache.poi.ss.usermodel.Workbook as Workbook
+import java.text.SimpleDateFormat as SimpleDateFormat
+import com.kms.katalon.keyword.excel.ExcelKeywords as ExcelKeywords
 
-TestData input = findTestData('Data Files/01-Omni Notes')
+TestData input = findTestData('Data Files/Checkout')
 
-Mobile.startApplication('D:\\apk mobile\\Omni Notes_v6.1.0_apkpure.com.apk', false)
-//String app_id = GlobalVariable.app_url
+for (int baris = 1; baris <= 1; baris++) {
+    WebUI.delay(1)
 
-//Mobile.startApplication(app_id, false)
+    for (int barang = 1; barang <= input.getRowNumbers(); barang++) {
+        TestObject button = new TestObject().addProperty('xpath', ConditionType.EQUALS, "/html/body/div/div/div/div[2]/div/div/div/div[$barang]/div[2]/div[2]/button")
 
-for (int baris = 1; baris <= input.getRowNumbers(); baris++) {
-    if (Mobile.verifyElementVisible(findTestObject('Object Repository/Omni Notes/android.widget.Button - Allow'), 15, FailureHandling.OPTIONAL)) {
-        Mobile.tap(findTestObject('Object Repository/Omni Notes/android.widget.Button - Allow'), 0)
+        WebUI.click(button)
     }
     
-    if (Mobile.verifyElementVisible(findTestObject('Object Repository/Omni Notes/android.widget.buttonNext'), 15, FailureHandling.OPTIONAL)) {
-        boolean next = true
+    WebUI.delay(1)
 
-        while (next == true) {
-            Mobile.delay(1)
+    WebUI.click(findTestObject('Object Repository/Sauce/Checkout/a_1'))
 
-            Mobile.tap(findTestObject('Object Repository/Omni Notes/android.widget.buttonNext'), 0)
+    WebUI.delay(1)
 
-            next = Mobile.verifyElementVisible(findTestObject('Object Repository/Omni Notes/android.widget.buttonNext'), 
-                15, FailureHandling.OPTIONAL)
+    String Data = './Excel/Sauce-checkout.xlsx'
+
+    Workbook excel = ExcelKeywords.getWorkbook(Data)
+
+    Sheet sheet = excel.getSheet('Sheet1')
+
+    for (int value = 1; value <= input.getRowNumbers(); value++) {
+        TestObject object = new TestObject().addProperty('xpath', ConditionType.EQUALS, "/html/body/div/div/div/div[2]/div/div[1]/div[$value+2]/div[2]/div[2]/div")
+
+        String price = WebUI.getText(object)
+
+        println(price)
+
+        for (int kol = 5; kol <= 5; kol++) {
+            ExcelKeywords.setValueToCellByIndex(sheet, value, kol, price)
+
+            ExcelKeywords.saveWorkbook(Data, excel)
         }
     }
     
-    Mobile.delay(1)
+    for (int bar = 1; bar <= input.getRowNumbers(); bar++) {
+        isbreak = false
 
-    Mobile.takeScreenshot('D:\\Halaman Utama.png')
+        Exp = input.getValue('expected result', bar)
 
-    Mobile.delay(1)
+        for (int row = 1; row <= input.getRowNumbers(); row++) {
+            Res = input.getValue('actual result', row)
 
-    Mobile.tap(findTestObject('Object Repository/Omni Notes/android.widget.ImageButtonTambah'), 0)
+            if (Exp == Res) {
+                for (int brs = bar; brs <= bar; brs++) {
+                    for (int kol = 6; kol <= 6; kol++) {
+                        ExcelKeywords.setValueToCellByIndex(sheet, brs, kol, 'pass')
 
-    Mobile.delay(1)
+                        ExcelKeywords.saveWorkbook(Data, excel)
+                    }
+                }
+                
+                isbreak = true
 
-    Mobile.tap(findTestObject('Object Repository/Omni Notes/android.widget.ImageButtonTextNote'), 0)
+                break
+            } else {
+                for (int brs = bar; brs <= bar; brs++) {
+                    for (int kol = 6; kol <= 6; kol++) {
+                        ExcelKeywords.setValueToCellByIndex(sheet, brs, kol, 'fail')
 
-    Mobile.delay(1)
-
-    Mobile.takeScreenshot()
-
-    //    Mobile.delay(1)
-    //    Mobile.tap(findTestObject('Object Repository/Omni Notes/android.widget.ImageButtonCamera'), 0, FailureHandling.OPTIONAL)
-    //    Mobile.tapAtPosition(554, 1978)
-    //
-    //    Mobile.delay(3)
-    //
-    //    Mobile.tapAtPosition(554, 1978)
-    //    Mobile.tap(findTestObject('Object Repository/Omni Notes/android.view.View button camera emu'), 0, FailureHandling.OPTIONAL)
-    //    Mobile.waitForElementPresent(findTestObject('Object Repository/Omni Notes/android.widget.ImageButton Check'), 2, FailureHandling.OPTIONAL)
-    //
-    //    Mobile.waitForElementPresent(findTestObject('Object Repository/Omni Notes/android.widget.ImageButton done'), 2, FailureHandling.OPTIONAL)
-    //
-    //    Mobile.tap(findTestObject('Object Repository/Omni Notes/android.widget.Button - OK'), 2, FailureHandling.OPTIONAL)
-    //
-    //    Mobile.tap(findTestObject('Object Repository/Omni Notes/android.widget.ImageButton done'), 2, FailureHandling.OPTIONAL)
-    //
-    //    Mobile.delay(1)
-    //
-    //    Mobile.takeScreenshot()
-    Mobile.delay(1)
-
-    Mobile.setText(findTestObject('Object Repository/Omni Notes/android.widget.EditText - Title'), input.getValue('title', 
-            baris), 0)
-
-    Mobile.delay(1)
-
-    Mobile.setText(findTestObject('Object Repository/Omni Notes/android.widget.EditText - Content'), input.getValue('content', 
-            baris), 0)
-
-    Mobile.delay(1)
-
-    Mobile.takeScreenshot()
-
-    Mobile.delay(1)
-
-    Mobile.tap(findTestObject('Object Repository/Omni Notes/android.widget.ImageButtonBack'), 0)
+                        ExcelKeywords.saveWorkbook(Data, excel)
+                    }
+                }
+            }
+        } //
+    } //        TestObject object = new TestObject().addProperty('xpath', ConditionType.EQUALS, "/html/body/div/div/div/div[2]/div/div[1]/div[$bar+2]/div[2]/div[2]/div")
 }
