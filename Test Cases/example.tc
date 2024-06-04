@@ -4,5 +4,6 @@
    <name>example</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>44060296-d1f2-476b-821b-109df7123371</testCaseGuid>
 </TestCaseEntity>

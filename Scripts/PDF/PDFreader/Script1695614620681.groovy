@@ -25,18 +25,26 @@ import org.apache.pdfbox.text.PDFTextStripper
 import org.openqa.selenium.Keys as Keys
 
 //String URL = WebUI.getUrl()
-File pdf = new File("D://Katalon Project//Demo Web//PDF//manual-qa-ebook-jan-2023.pdf");
 
-PDDocument document = pdf
+
+File pdf = new File("PDF//manual-qa-ebook-jan-2023.pdf");
+
+PDDocument document = Loader.loadPDF(pdf);
 
 println(document)
 
 PDFTextStripper pdfTextStripper = new PDFTextStripper()
 
-pdfTextStripper.setStartPage(2)
+pdfTextStripper.setStartPage(1)
 
-pdfTextStripper.setEndPage(2)
+pdfTextStripper.setEndPage(3)
 
 String text = pdfTextStripper.getText(document)
 
-println(text)
+print(text)
+
+if(text.contains("\nFor instance, e-commerce platforms work on multiple operating \nsystems using the same backend. Every time the platform is ")) {
+	println("ada")
+} else { 
+	println("gak ada")
+}

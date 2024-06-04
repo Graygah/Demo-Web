@@ -17,35 +17,5 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
+CucumberKW.runFeatureFile('Include/features/Sauce Login.feature')
 
-WebUI.navigateToUrl('https://www.saucedemo.com/')
-
-long startTime = System.nanoTime()
-
-long endTime = System.nanoTime()
-
-println(endTime)
-
-long responseTime = (endTime - startTime) / 1000000
-
-println(responseTime)
-
-double responseTimeInSecond = (double) responseTime / 1000000000;
-println(responseTimeInSecond)
-WebUI.maximizeWindow()
-//TestData input = findTestData('Data Files/Login-SauceDemo')
-//for (int baris = 1; baris <= input.getRowNumbers(); baris++) {
-WebUI.setText(findTestObject('Object Repository/Sauce/Login-SauceDemo/Input_Username'), GlobalVariable.usersauce)
-
-WebUI.setText(findTestObject('Object Repository/Sauce/Login-SauceDemo/Input_Password'), GlobalVariable.passsauce)
-
-//
-//WebUI.takeScreenshot()
-//
-WebUI.click(findTestObject('Object Repository/Sauce/Login-SauceDemo/Button_Login'))
-
-//
-WebUI.waitForElementPresent(findTestObject('Object Repository/Sauce/Login-SauceDemo/Div_Products'), 0)
-
-WebUI.takeScreenshot()
