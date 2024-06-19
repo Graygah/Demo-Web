@@ -31,20 +31,24 @@ long responseTime = (endTime - startTime) / 1000000
 
 println(responseTime)
 
-double responseTimeInSecond = (double) responseTime / 1000000000;
+double responseTimeInSecond = ((responseTime) as double) / 1000000000
+
 println(responseTimeInSecond)
+
 WebUI.maximizeWindow()
+
 //TestData input = findTestData('Data Files/Login-SauceDemo')
 //for (int baris = 1; baris <= input.getRowNumbers(); baris++) {
+WebUI.
 WebUI.setText(findTestObject('Object Repository/Sauce/Login-SauceDemo/Input_Username'), GlobalVariable.usersauce)
 
 WebUI.setText(findTestObject('Object Repository/Sauce/Login-SauceDemo/Input_Password'), GlobalVariable.passsauce)
 
+WebUI.click(findTestObject('Object Repository/Sauce/Login-SauceDemo/Button_Login'))
+
 //
 //WebUI.takeScreenshot()
 //
-WebUI.click(findTestObject('Object Repository/Sauce/Login-SauceDemo/Button_Login'))
-
 //
 WebUI.waitForElementPresent(findTestObject('Object Repository/Sauce/Login-SauceDemo/Div_Products'), 0)
 

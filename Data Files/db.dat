@@ -3,6 +3,7 @@
    <description></description>
    <name>db</name>
    <tag></tag>
+   <connectionProperties/>
    <containsHeaders>true</containsHeaders>
    <csvSeperator></csvSeperator>
    <dataFileGUID>af287bbf-af2e-46fb-bf66-2614f0e43f49</dataFileGUID>
@@ -11,7 +12,7 @@
    <driverClassName></driverClassName>
    <isInternalPath>false</isInternalPath>
    <password></password>
-   <query></query>
+   <query>Select * From login</query>
    <secureUserAccount>true</secureUserAccount>
    <sheetName></sheetName>
    <user>root</user>

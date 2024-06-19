@@ -18,6 +18,7 @@ import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
+import CustomKeywords
 import internal.GlobalVariable
 
 import org.openqa.selenium.WebElement
@@ -34,7 +35,7 @@ import com.kms.katalon.core.testobject.TestObjectProperty
 
 import com.kms.katalon.core.mobile.helper.MobileElementCommonHelper
 import com.kms.katalon.core.util.KeywordUtil
-
+import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 import com.kms.katalon.core.webui.exception.WebElementNotFoundException
 
 import cucumber.api.java.en.And
@@ -63,10 +64,6 @@ class Login {
 		WebUI.setText(findTestObject('Object Repository/Sauce/Login-SauceDemo/Input_Password'), password)
 		WebUI.delay(2)
 		WebUI.click(findTestObject('Object Repository/Sauce/Login-SauceDemo/Button_Login'))
+		CustomKeywords.'keyword.angka.angka1'()
 	}
-
-	//	@Then("I verify home page")
-	//	def I_verify_the_status_in_step(String status) {
-	//		println status
-	//	}
 }

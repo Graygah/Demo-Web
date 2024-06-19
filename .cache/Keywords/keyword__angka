@@ -1,0 +1,16 @@
+{
+  "keywordFileContentHash": "44026146251EE3DAC9D4734DE0C35639",
+  "keywordClasses": [
+    {
+      "name": "keyword.angka",
+      "keywordMethods": [
+        {
+          "name": "angka1",
+          "parameters": [],
+          "javadoc": ""
+        }
+      ]
+    }
+  ],
+  "javadocParsed": true
+}
