@@ -21,25 +21,23 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl('https://www.saucedemo.com/')
 
-long startTime = System.nanoTime()
-
-long endTime = System.nanoTime()
-
-println(endTime)
-
-long responseTime = (endTime - startTime) / 1000000
-
-println(responseTime)
-
-double responseTimeInSecond = ((responseTime) as double) / 1000000000
-
-println(responseTimeInSecond)
-
+//long startTime = System.nanoTime()
+//
+//long endTime = System.nanoTime()
+//
+//println(endTime)
+//
+//long responseTime = (endTime - startTime) / 1000000
+//
+//println(responseTime)
+//
+//double responseTimeInSecond = ((responseTime) as double) / 1000000000
+//
+//println(responseTimeInSecond)
 WebUI.maximizeWindow()
 
 //TestData input = findTestData('Data Files/Login-SauceDemo')
 //for (int baris = 1; baris <= input.getRowNumbers(); baris++) {
-WebUI.
 WebUI.setText(findTestObject('Object Repository/Sauce/Login-SauceDemo/Input_Username'), GlobalVariable.usersauce)
 
 WebUI.setText(findTestObject('Object Repository/Sauce/Login-SauceDemo/Input_Password'), GlobalVariable.passsauce)

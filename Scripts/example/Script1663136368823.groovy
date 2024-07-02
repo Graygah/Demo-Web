@@ -9,41 +9,88 @@ import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
 import com.kms.katalon.core.model.FailureHandling as FailureHandling
 import com.kms.katalon.core.testcase.TestCase as TestCase
 import com.kms.katalon.core.testdata.TestData as TestData
-import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
 import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
-import org.openqa.selenium.Keys as Keys
-import com.kms.katalon.core.testobject.ConditionType as ConditionType
-import org.apache.poi.ss.usermodel.Sheet as Sheet
-import org.apache.poi.ss.usermodel.Workbook as Workbook
-import java.text.SimpleDateFormat as SimpleDateFormat
-import com.kms.katalon.keyword.excel.ExcelKeywords as ExcelKeywords
-import org.apache.poi.ss.usermodel.WorkbookFactory as WorkbookFactory
-import java.text.NumberFormat as NumberFormat
-import java.time.LocalDate as LocalDate
+import java.time.LocalDateTime
+import com.kms.katalon.core.configuration.RunConfiguration
+import com.kms.katalon.core.testdata.TestData
+import com.kms.katalon.core.testdata.TestDataFactory
+import com.kms.katalon.core.testobject.WindowsTestObject
+import com.kms.katalon.core.testobject.WindowsTestObject.LocatorStrategy
+import reporting.Initialization
+import reporting.ReportData
+import internal.GlobalVariable
+import reporting.Report
+import reporting.Screenshot
 
-int plafon = 20000000
+//=========================================================================================================================//
+//Template Report Design//
+//=========================================================================================================================//
+LocalDateTime endDate
 
-int jangkawaktu = 24
+Report report
 
-int totalangsuran = (plafon * 0.005) / (1 - ((1 + 0.005) ** -(jangkawaktu)))
+Initialization initialization = new Initialization()
 
-int bunga = plafon * 0.005
+LocalDateTime startDate = LocalDateTime.now()
 
-int pokok = totalangsuran - bunga
+String story = 'IOS BNI MOBILE BANKING'
 
-println(pokok)
+String tcId = 'TC-CATEW-664'
 
-int outstandingawal = plafon - pokok
+String shortDesc = 'Normal Transaksi TopUp Danadari Menu Lengkap'
 
-println(outstandingawal)
+String testCase = 'Nasabah Melakukan Transaksi E-Wallet Dana (critical)'
 
-for (int x = 1; x <= (jangkawaktu - 13); x++) {
-    int pokokperbulan = pokok * ((1 + 0.005) ** x)
+String expectedResult = 'Transaksi berhasil'
 
-    println(pokokperbulan) 
-	
-}
+String criteria = 'Normal'
+
+String tempFolder = RunConfiguration.getProjectDir() + '/Data Files/Image/Temp'
+
+Screenshot screenshot = new Screenshot(tempFolder)
+
+ReportData reportData = new ReportData(startDate, screenshot, story, tcId, shortDesc, testCase, expectedResult, criteria, 
+tempFolder)
+
+//runscript
+
+WebUI.openBrowser('')
+
+WebUI.navigateToUrl('https://www.saucedemo.com/')
+
+//long startTime = System.nanoTime()
+//
+//long endTime = System.nanoTime()
+//
+//println(endTime)
+//
+//long responseTime = (endTime - startTime) / 1000000
+//
+//println(responseTime)
+//
+//double responseTimeInSecond = ((responseTime) as double) / 1000000000
+//
+//println(responseTimeInSecond)
+WebUI.maximizeWindow()
+
+//TestData input = findTestData('Data Files/Login-SauceDemo')
+//for (int baris = 1; baris <= input.getRowNumbers(); baris++) {
+WebUI.setText(findTestObject('Object Repository/Sauce/Login-SauceDemo/Input_Username'), GlobalVariable.usersauce)
+
+WebUI.setText(findTestObject('Object Repository/Sauce/Login-SauceDemo/Input_Password'), GlobalVariable.passsauce)
+
+WebUI.click(findTestObject('Object Repository/Sauce/Login-SauceDemo/Button_Login'))
+
+//
+//WebUI.takeScreenshot()
+//
+//
+WebUI.waitForElementPresent(findTestObject('Object Repository/Sauce/Login-SauceDemo/Div_Products'), 0)
+
+WebUI.takeScreenshot()
+WebUI.closeBrowser()
+Report.createReport(LocalDateTime.now(), reportData)

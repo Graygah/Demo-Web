@@ -14,5 +14,6 @@
       <type>TESTCASE</type>
    </integratedEntity>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>2f6b8cd9-9be6-4d44-87fa-35f269d0db6b</testCaseGuid>
 </TestCaseEntity>
